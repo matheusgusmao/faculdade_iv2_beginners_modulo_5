@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body{ min-height: 100% }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+#elementActive {
+    width: 100vw;
+    height: 100vh;
+}
+
+#elementActive.active {
+    animation: animationZ 3.5s linear;
+}
+
+
+@keyframes animationZ {
+    0% {
+        background-color: transparent;
+    }
+    50%{background-color:white}
+    100%{
+        background-color: transparent;
+    }
+}
+
+
+
+label {
+    margin-top: 10px;
+}
+
+input, button, textarea {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: rgb(70, 65, 65);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(72, 145, 0);
+}
+
+button:hover {
+    background-color: rgb(67, 80, 55);
+}
+
+#firstColor, #secondColor, #fontColor {
+    padding: 1px;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+#myContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    height: 80vh;
+    width: 30vw;    
+    background-color: rgb(0, 0, 0); /* rgb(36, 17, 90) */
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+
+#text {
+    margin-top: 20px;
+    width: 45vw;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+

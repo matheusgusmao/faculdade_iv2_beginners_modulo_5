@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO MÓDULO 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="elementActive">
+        <section id="mySection">
+            <div id="myContent">
+                <label for="firstColor">Primeira cor do Gradiente</label>
+                <input type="color" id="firstColor">
+    
+                <label for="secondColor">Segunda cor do Gradiente</label>
+                <input type="color" id="secondColor">
+    
+                <label for="deg">Quantidade em Graus do Gradiente</label>
+                <input type="number" id="deg" max="360" min="0">
+    
+                <label for="fontColor">Cor da Fonte do Texto</label>
+                <input type="color" id="fontColor">
+    
+                <label for="textArea">Texto que será mostrado</label>
+                <textarea cols="30" rows="10" id="textArea"></textarea>
+    
+                <label for="fontSize">Tamanho em pixels da Fonte</label>
+                <input type="number" id="fontSize">
+    
+                <div id="buttons">
+                    <button onclick="save()">Salvar</button>
+                    <button onclick="clearStorage()">Limpar</button>
+                </div>
+            </div>
+    
+            <div id="text">
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
